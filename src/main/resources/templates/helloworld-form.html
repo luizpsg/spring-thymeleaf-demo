@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" th:href="@{/css/demo.css}" />
-  <title>thymeleaf Demo</title>
+  <title>Hello World - Input Form</title>
 </head>
 <body>
   
-  Hello World of Spring!
+  <form th:action="@{/processForm}" method="GET">
 
-  <br><br>
+    <input type="text" name="studentName" placeholder="What's your name?" />
+    <input type="submit" />
 
-  Student name: <span th:text="${param.studentName}" />
+  </form>
 
 </body>
 </html>
