@@ -8,6 +8,8 @@ public class Student {
 
   private String country;
 
+  private String favoriteLanguage;
+
   public Student() {
   }
 
@@ -40,11 +42,17 @@ public class Student {
     this.country = country;
   }
 
+  public String getFavoriteLanguage() {
+    return favoriteLanguage;
+  }
+
+  public void setFavoriteLanguage(String favoriteLanguage) {
+    this.favoriteLanguage = favoriteLanguage;
+  }
+
   @Override
   public String toString() {
-    return "Student{" +
-        "firstName='" + firstName + '\'' +
-        ", lastName='" + lastName + '\'' +
-        '}';
+    return "Student [firstName=" + firstName + ", lastName=" + lastName + ", country=" + country + ", favoriteLanguage="
+        + favoriteLanguage + "]";
   }
 }
